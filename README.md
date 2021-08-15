@@ -21,3 +21,53 @@ there are two types of data types:
 
 **Abstract data types**
 
+    An abstract data type consists of two part 
+        1. declaration of date
+        2. declaration of operations
+
+    
+**what is agorithm ?**
+
+    an agorithm is the step by step unambiguous instructions to solve a given problem
+
+**Why is the analysis of algorithm ?**
+
+    algorithm analysis helps us to determine which algorithm is most efficent in terms of time and space consumed
+
+**Goal of the analysis of algorithms**
+
+    the goal of the analysis of algorithms is to compare algorithms (or solutions) mainly in terms of running time bu also in terms of other factors
+    
+**what is running time analysis**
+
+    input size is the number of elements in the input, and depending on the problem type, the input may be of different types:
+        1. size of an array 
+        2. polynomial degree
+        3. number of elements in a matrix 
+        4. number of bits in the binary representaion of the input 
+        5. vertices and edgres 
+
+
+**how to compare algorithms**
+
+    a few object measures:
+        1. excution time ? excution times are specific to a particular computer 
+        2. number of statements excuted ? not a good measure, since the number of statements varies with the programming language as well as the style of individual programmer.
+        3. idea solution ? let us assume that we express the running time of a given algorithm as a function of the input size n (i, e, f(n)) and compare these different functions corresponding to running times. This kind of comparision is independent of machine time, programming syle, etc...
+**what is rate of growth**
+
+    The rate at which the running time increases as a function of input is called rate of growth
+
+**commonly used rates of growth**
+
+
+| | | |
+|-|-|-|
+|__Time complexity__| __Name__ | __Example__ |
+| 1 |  constant| adding an element to the front of a linked list |
+| log n | logarithmic| finding an element in sorted array |
+| n | linear | finding an element in an unsorted array |
+| n log n | linear logarithmic | sorting n items divide and 'conquer' mergesort |
+| n ^ 2 | quadratic | shortest path between two nodes in graph |
+| n ^ 3 | cubic | matrix multiplication |
+| 2 ^ n | exponential | the towers of hanoi problem |
