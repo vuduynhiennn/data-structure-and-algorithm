@@ -88,3 +88,42 @@ The rate at which the running time increases as a function of input is called ra
 | n ^ 2 | quadratic | shortest path between two nodes in graph |
 | n ^ 3 | cubic | matrix multiplication |
 | 2 ^ n | exponential | the towers of hanoi problem |
+
+
+## type of analysis
+
+there are three types of analysis:
+
+1. worst case 
+    defines the input for which the algorithm takes a long time (slowest to compelete)
+
+    input is the one for which the algorithm runs the slowest
+
+2. best case 
+    defines the input for which algorithm takes the least time (fastest time to compelete)
+
+    input is the one for which the algorithm runs the fatest
+
+3. average case
+    provides a prediction about the running time of algorithm
+
+    run the algorithm many times using many different inputs that come from some distribution that generates these inputs, compute the total running time (by adding the individual times ), and divide by the number of trials 
+
+    assume that the input is random
+
+    __Lower bound <= average time <= upper bound__ 
+
+for a given algorithm, we can represent the best, worst and average cases in the form of expression
+
+## asymptotic notation
+
+    f(n)
+
+## big o notation
+
+big o notation is a mathematical notation that describes the limiting behavor or a function when the argument tends towards a particular value or ifinity. It is a member of a family of notation
+
+Big O notation describes the complexity of your code using algebraic terms
+
+
+
