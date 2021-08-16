@@ -19,7 +19,17 @@ there are many other data structures that do the same thing as linked list. Befo
 |3|2|1|2|2|3|
 | | | | | | | |  
 0 |1|2|3|4|5|index| 
-
+ 
 ## why constant time for accessing arrat elements 
 
+
+## advantage
+
+linked list has dynamic size
+
+## disadantages
+
+access time to individual elements. Linked list take O(n) for access to an element in the list in the worst case
+
+## comparision of linked list with array & dynamic arrays
 
