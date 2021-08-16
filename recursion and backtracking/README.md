@@ -12,3 +12,5 @@ recursive is a useful technique
 
 ## format of a recursive function
 
+## recursive and memory
+
