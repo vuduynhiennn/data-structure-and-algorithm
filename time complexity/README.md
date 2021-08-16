@@ -29,3 +29,30 @@ T1(n) = 100n<sup>2</sup>
 
 T2(n) = 5n<sup>3</sup>
 
+lựa chọn thuật toán dựa theo mức độ dữ liệu, chọn thuật toán đơn giản với phần đông
+đối với 2 đa thức nếu bỏ qua hết tất cả nhưng số hạng khác 
+
+vd T1(n) = O(n<sup>2</sup>), T2(n) = O(n<sup>3</sup>)
+
+có thể bỏ qua hằng số 
+
+log<sub>2</sub>n, nlog<sub>2</sub>n, n<sup>2</sup>,  n<sup>3</sup>,  2<sup>n</sup>, n!,  n<sup>n</sup>
+
+
+Quy tắc cộng và quy tắc nhân
+
+nối tiếp nhau quy tắc cộng
+
+p1 p2 lồng nhau thì độ phức tạp sử dụng quy tắc nhân 
+
+quy tắc chung
+
+**Gán, nhập, xuất, return** O(1)
+**Tuần tự các lệnh** quy tắc cộng
+**Cấu trúc if** max(dk1, dk2, dkn)
+
+### trình tự đánh giá
+
+1. nối tiếp: từ trên xuống
+2. lồng nhau: từ trong ra 
+
