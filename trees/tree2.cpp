@@ -1,16 +1,75 @@
 #include <iostream>
 using namespace std;
 
-// khai bao 1 cai node
 class Node  {
-    int data; // du lieu ma node luu tru
-    Node* left; //node ben trai cua cay hay con goi la node ben trai cua cay
-    Node* right;  /// node ben phai cua cay hay con goi la cay con phai node ben phai
+    public:
+        int data;
+        Node* left; 
+        Node* right;  
 };
-//nhap vao cay nhi phan so nguye
-// xuat ra man hinh cac phan tu cua cay nhi phan
+
+void nodeInit(Node* tree) {
+    tree = NULL; 
+}
+
+void addANewNode(Node* &tree, int newData) {
+    if(tree == NULL) {
+        Node* newNode = new Node; 
+        newNode->data = newData; 
+        newNode->left = NULL;
+        newNode->right = NULL;
+        tree = newNode; 
+    } else if (tree->data > newData) {
+        addANewNode(tree->right, newData);
+    } else {
+        addANewNode(tree->left, newData);
+    }
+}
+void print_NLR(Node* tree)
+{ 
+	if (tree != NULL)
+	{
+		cout << tree->data << " "; 
+		print_NLR(tree->left); 
+		print_NLR(tree->right); 
+	}
+}
+
+void print_NRL(Node* tree) {
+    if (tree != NULL)
+	{
+		cout << tree->data << " "; 
+		print_NLR(tree->right); 
+		print_NLR(tree->left); 
+	}
+}
+
+void print_LNR(Node* tree) {
+    if (tree != NULL)
+	{
+		cout << tree->data << " "; 
+		print_NLR(tree->right); 
+		print_NLR(tree->left); 
+	}
+}
+
+
 int main() {
-
-
+    Node* tree = NULL;
+    nodeInit(tree);
+    addANewNode(tree, 5);
+    addANewNode(tree, 7);
+    addANewNode(tree, 6);
+    addANewNode(tree, -2);
+    addANewNode(tree, 0);
+    addANewNode(tree, 1);
+    addANewNode(tree, -5);
+    addANewNode(tree, -3);
+    cout << "=============NLR==============" << endl;
+    print_NLR(tree);
+    cout << "=============NRL==============" << endl;
+    print_NRL(tree);
+    cout << "=============LNR=============="; << endl;
+    print_LNR(tree);
     return 0;
 }
