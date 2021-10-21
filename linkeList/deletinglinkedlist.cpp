@@ -41,7 +41,6 @@ void deletingNode(List &l, int k) {
         l.pHead = l.pHead->next;
         free(temp);
     }
-    if()
 }
 
 int main() {
